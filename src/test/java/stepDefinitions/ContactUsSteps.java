@@ -15,10 +15,11 @@ import java.util.Map;
 public class ContactUsSteps {
     HomePage home;
     ContactUs contactUs;
+
     @Given("the user navigates to base page")
     public void theUserNavigatesToBasePage() {
         home = new HomePage(BaseClass.getDriver());
-        if (!home.isCoverImageDisplayed()){
+        if (!home.isCoverImageDisplayed()) {
             Assert.fail("**** Cover Image display failed ****");
         }
     }
@@ -30,36 +31,53 @@ public class ContactUsSteps {
 
     @When("the msg GET IN TOUCH is visible")
     public void theMsgGETINTOUCHIsVisible() {
-       if (!"Get In Touch".equals(home.getTouchMsgDisplayed()))
-        Assert.fail("**** Error with Get In Touch msg ****");
+        contactUs = new ContactUs(BaseClass.getDriver());
+        System.out.println(contactUs.getTouchMsgDisplayed());
+        if (!"GET IN TOUCH".equals(contactUs.getTouchMsgDisplayed())) {
+            Assert.fail("**** Error with Get In Touch msg ****");
+        }
+
     }
 
     @And("the user enters the contact details into below field")
     public void theUserEntersTheContactDetailsIntoBelowField(DataTable table) {
-        contactUs = new ContactUs(BaseClass.getDriver());
 
-        Map<String, String> dataMap= table.asMap(String.class,String.class);
+        Map<String, String> dataMap = table.asMap(String.class, String.class);
         contactUs.setName(dataMap.get("name"));
         contactUs.setEmail(dataMap.get("email"));
         contactUs.setSubject(dataMap.get("subject"));
         contactUs.setMessage(dataMap.get("message"));
-        contactUs.uploadFile(dataMap.get("path"));
-
     }
 
-    @And("the user uploads the file")
-    public void theUserUploadsTheFile() {
+    @And("the user uploads the file from {string}")
+    public void theUserUploadsTheFileFrom(String path) {
+        String filePath = System.getProperty("user.dir") + path;
+        System.out.println(filePath);
+        contactUs.uploadFile(filePath);
     }
 
     @Then("the user click the submit button and clicks ok")
     public void theUserClickTheSubmitButtonAndClicksOk() {
+        contactUs.clickSubmit();
+        BaseClass.getDriver().switchTo().alert().accept();
     }
 
     @And("the user is presented with successful submission msg")
     public void theUserIsPresentedWithSuccessfulSubmissionMsg() {
+        if (!"Success! Your details have been submitted successfully.".equals(contactUs.getSubmitSuccessMsg())) {
+            Assert.fail("**** Error with Submit success message ****");
+        }
     }
 
     @And("the user click home button and home page is displayed")
     public void theUserClickHomeButtonAndHomePageIsDisplayed() {
+        contactUs.clickHomeButton();
+        if ("https://www.automationexercise.com/".equals(BaseClass.getDriver().getCurrentUrl())) {
+            Assert.assertTrue(true);
+        } else {
+            Assert.fail("**** Error displaying home page ****");
+        }
     }
+
+
 }

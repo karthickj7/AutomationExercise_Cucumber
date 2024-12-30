@@ -28,8 +28,7 @@ public class HomePage extends BasePage {
     WebElement btn_ContactUs;
     @FindBy(xpath = "//*[@src=\"/static/images/home/girl2.jpg\"]")
     WebElement img_cover;
-    @FindBy(xpath = "//h2[normalize-space()=\"Get In Touch\"]")
-    WebElement msg_GetInTouch;
+
 
     public void clickContactUs() {
         btn_ContactUs.click();
@@ -43,13 +42,6 @@ public class HomePage extends BasePage {
         return img_cover.isDisplayed();
     }
 
-    public String getTouchMsgDisplayed() {
-        try {
-            return msg_GetInTouch.getText();
-        } catch (Exception e) {
-            return e.getMessage();
-        }
 
-    }
 
 }

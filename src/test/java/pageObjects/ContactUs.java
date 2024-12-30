@@ -22,6 +22,12 @@ public class ContactUs extends BasePage {
     WebElement load_File;
     @FindBy(xpath = "//input[@name='submit']")
     WebElement btn_submit;
+    @FindBy(xpath = "//*[@class=\"status alert alert-success\"]")
+    WebElement msg_submitSuccess;
+    @FindBy(xpath = "//span[normalize-space()='Home']")
+    WebElement btn_Home;
+    @FindBy(xpath = "//h2[normalize-space()=\"Get In Touch\"]")
+    WebElement msg_GetInTouch;
 
     public void setName(String name) {
         txt_Name.sendKeys(name);
@@ -43,8 +49,28 @@ public class ContactUs extends BasePage {
         load_File.sendKeys(path);
     }
 
+    public String getTouchMsgDisplayed() {
+        try {
+            return msg_GetInTouch.getText();
+        } catch (Exception e) {
+            return e.getMessage();
+        }
+
+    }
     public void clickSubmit() {
         btn_submit.click();
+    }
+
+    public String getSubmitSuccessMsg(){
+        try{
+            return msg_submitSuccess.getText();
+        } catch (Exception e) {
+            return e.getMessage();
+        }
+    }
+
+    public void clickHomeButton(){
+        btn_Home.click();
     }
 
 }
