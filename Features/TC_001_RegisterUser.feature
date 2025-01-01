@@ -3,7 +3,7 @@ Feature: Register User
   @sanity @regression
   Scenario: Successful Register User
     Given the user navigates to login page and new user sign up message is displayed
-    When the user enters the login details "testuser" and "test@wvwenm.com" and clicks signup
+    When the user enters the login details "testuser" and "test@wvw2enm.com" and clicks signup
     And the user enters the details into below fields and click on Create Account button
       | title        | MR           |
       | password     | testpassword |

@@ -1,0 +1,31 @@
+2025-01-01 13:36:50 INFO  BaseClass:25 - **** Starting RegisterUser Steps ****
+2025-01-01 13:36:50 INFO  BaseClass:27 - **** Clicking in Sign Up / Login  ****
+2025-01-01 13:36:51 INFO  BaseClass:37 - **** Entering Email and Name for signup ****
+2025-01-01 13:36:52 INFO  BaseClass:41 - **** Clicking on signup button ****
+2025-01-01 13:36:53 ERROR BaseClass:53 - **** Entering New User info ****
+2025-01-01 13:36:56 INFO  BaseClass:69 - **** Clicking on create account btn ****
+2025-01-01 13:36:58 INFO  BaseClass:84 - **** Clicking on continue button in register user page ****
+2025-01-01 13:37:00 INFO  BaseClass:98 - **** Clicking on delete account ****
+2025-01-01 13:37:28 INFO  BaseClass:19 - **** Starting Login Steps ****
+2025-01-01 13:37:30 INFO  BaseClass:26 - **** Entering valid login details ****
+2025-01-01 13:37:30 INFO  BaseClass:33 - **** Clicking on login button ****
+2025-01-01 13:37:34 INFO  BaseClass:40 - **** Checking the logged in message ****
+2025-01-01 13:38:01 INFO  BaseClass:19 - **** Starting Login Steps ****
+2025-01-01 13:38:02 INFO  BaseClass:46 - **** Entering invalid login details ****
+2025-01-01 13:38:03 INFO  BaseClass:33 - **** Clicking on login button ****
+2025-01-01 13:38:04 INFO  BaseClass:54 - **** Checking the login error message ****
+2025-01-01 13:38:31 INFO  BaseClass:19 - **** Starting Login Steps ****
+2025-01-01 13:38:33 INFO  BaseClass:26 - **** Entering valid login details ****
+2025-01-01 13:38:34 INFO  BaseClass:33 - **** Clicking on login button ****
+2025-01-01 13:38:36 INFO  BaseClass:40 - **** Checking the logged in message ****
+2025-01-01 13:38:36 INFO  BaseClass:63 - **** Clicking the logout button ****
+2025-01-01 13:39:03 INFO  BaseClass:25 - **** Starting RegisterUser Steps ****
+2025-01-01 13:39:03 INFO  BaseClass:27 - **** Clicking in Sign Up / Login  ****
+2025-01-01 13:39:04 INFO  BaseClass:111 - **** Entering existing email address ****
+2025-01-01 13:39:05 INFO  BaseClass:115 - **** Clicking on sign up button ****
+2025-01-01 13:39:05 INFO  BaseClass:121 - **** Checking existing email error msg ****
+2025-01-01 13:40:06 INFO  BaseClass:15 - **** Started TestCaseSteps ****
+2025-01-01 13:40:08 INFO  BaseClass:26 - **** Navigated to Test Class Page****
+2025-01-01 13:40:08 INFO  BaseClass:27 - **** Finished TestCaseSteps ****
+2025-01-01 13:40:34 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
+2025-01-01 13:41:06 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****

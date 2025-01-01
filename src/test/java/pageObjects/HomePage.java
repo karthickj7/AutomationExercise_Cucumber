@@ -1,14 +1,11 @@
 package pageObjects;
 
+import io.cucumber.java.an.E;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BasePage {
-
-    public HomePage(WebDriver driver) {
-        super(driver);
-    }
 
     @FindBy(xpath = "//a[@href=\"/login\"]")
     WebElement btn_myAccount;
@@ -28,20 +25,51 @@ public class HomePage extends BasePage {
     WebElement btn_ContactUs;
     @FindBy(xpath = "//*[@src=\"/static/images/home/girl2.jpg\"]")
     WebElement img_cover;
+    @FindBy(id = "susbscribe_email")
+    public WebElement txt_SubscribeEmail;
+    @FindBy(id = "subscribe")
+    WebElement btn_subscribe;
+    @FindBy(xpath = "//div[text()=\"You have been successfully subscribed!\"]")
+    WebElement msg_subscriptionSuccess;
 
+    public HomePage(WebDriver driver) {
+        super(driver);
+    }
 
     public void clickContactUs() {
         btn_ContactUs.click();
+    }
+
+    public void clickProducts() {
+        btn_Products.click();
     }
 
     public void clickLogin_SignUp() {
         btn_myAccount.click();
     }
 
+    public void clickTestCase() {
+        btn_TestCases.click();
+    }
+
     public boolean isCoverImageDisplayed() {
         return img_cover.isDisplayed();
     }
 
+    public void setSubscribeEmail(String email) {
+        txt_SubscribeEmail.sendKeys(email);
+    }
 
+    public void clickSubscribe() {
+        btn_subscribe.click();
+    }
+
+    public String getSubscriptionSuccessMsg(){
+        try {
+            return msg_subscriptionSuccess.getText();
+        } catch (Exception e){
+            return e.getMessage();
+        }
+    }
 
 }

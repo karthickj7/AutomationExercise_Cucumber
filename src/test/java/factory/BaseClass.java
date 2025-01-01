@@ -6,11 +6,13 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
@@ -64,7 +66,10 @@ public class BaseClass {
         } else if (env.equalsIgnoreCase("local")) {
             switch (browser.toLowerCase()) {
                 case "chrome":
-                    driver = new ChromeDriver();
+                    ChromeOptions options = new ChromeOptions();
+                    File file = new File(System.getProperty("user.dir") + "\\Extention\\uBlock.crx");
+                    options.addExtensions(file);
+                    driver = new ChromeDriver(options);
                     break;
                 case "firefox":
                     driver = new FirefoxDriver();
@@ -80,7 +85,7 @@ public class BaseClass {
 
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-//        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
         return driver;
     }
 

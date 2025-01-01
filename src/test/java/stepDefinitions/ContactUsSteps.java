@@ -32,7 +32,6 @@ public class ContactUsSteps {
     @When("the msg GET IN TOUCH is visible")
     public void theMsgGETINTOUCHIsVisible() {
         contactUs = new ContactUs(BaseClass.getDriver());
-        System.out.println(contactUs.getTouchMsgDisplayed());
         if (!"GET IN TOUCH".equals(contactUs.getTouchMsgDisplayed())) {
             Assert.fail("**** Error with Get In Touch msg ****");
         }
@@ -52,7 +51,6 @@ public class ContactUsSteps {
     @And("the user uploads the file from {string}")
     public void theUserUploadsTheFileFrom(String path) {
         String filePath = System.getProperty("user.dir") + path;
-        System.out.println(filePath);
         contactUs.uploadFile(filePath);
     }
 
