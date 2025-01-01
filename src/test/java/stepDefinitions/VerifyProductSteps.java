@@ -34,7 +34,7 @@ public class VerifyProductSteps {
 
     @Then("the user click on view product of first product")
     public void theUserClickOnViewProductOfFirstProduct() {
-        productsPage.clickOnProductNo("1");
+        productsPage.clickOnViewProductOf("1");
     }
 
     @And("the user is landed on product details page")

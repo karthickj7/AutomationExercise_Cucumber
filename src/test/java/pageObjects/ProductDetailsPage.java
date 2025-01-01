@@ -17,6 +17,15 @@ public class ProductDetailsPage extends BasePage {
     WebElement txt_condition;
     @FindBy(xpath = "//div[@class=\"product-information\"]/p/b[contains(text(),\"Brand:\")]")
     WebElement txt_brand;
+    @FindBy(id = "quantity")
+    WebElement txt_quantity;
+    @FindBy(xpath = "//button[normalize-space()=\"Add to cart\"]")
+    WebElement btn_AddtoCart;
+    @FindBy(xpath = "//button[normalize-space()=\"Continue Shopping\"]")
+    WebElement btn_continueShopping;
+    @FindBy(xpath = "//a[normalize-space()=\"View Cart\"]")
+    WebElement btn_viewCart;
+
     public ProductDetailsPage(WebDriver driver) {
         super(driver);
     }
@@ -44,5 +53,16 @@ public class ProductDetailsPage extends BasePage {
 
     public boolean isBrandDisplayed() {
         return txt_brand.isDisplayed();
+    }
+
+    public void setQuantity(String val){
+        txt_quantity.clear();
+        txt_quantity.sendKeys(val);
+    }
+    public void clickAddToCart(){
+        btn_AddtoCart.click();
+    }
+    public void clickViewCart(){
+        btn_viewCart.click();
     }
 }
