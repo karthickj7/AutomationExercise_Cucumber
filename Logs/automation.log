@@ -1,77 +1,45 @@
-2025-01-01 13:36:50 INFO  BaseClass:25 - **** Starting RegisterUser Steps ****
-2025-01-01 13:36:50 INFO  BaseClass:27 - **** Clicking in Sign Up / Login  ****
-2025-01-01 13:36:51 INFO  BaseClass:37 - **** Entering Email and Name for signup ****
-2025-01-01 13:36:52 INFO  BaseClass:41 - **** Clicking on signup button ****
-2025-01-01 13:36:53 ERROR BaseClass:53 - **** Entering New User info ****
-2025-01-01 13:36:56 INFO  BaseClass:69 - **** Clicking on create account btn ****
-2025-01-01 13:36:58 INFO  BaseClass:84 - **** Clicking on continue button in register user page ****
-2025-01-01 13:37:00 INFO  BaseClass:98 - **** Clicking on delete account ****
-2025-01-01 13:37:28 INFO  BaseClass:19 - **** Starting Login Steps ****
-2025-01-01 13:37:30 INFO  BaseClass:26 - **** Entering valid login details ****
-2025-01-01 13:37:30 INFO  BaseClass:33 - **** Clicking on login button ****
-2025-01-01 13:37:34 INFO  BaseClass:40 - **** Checking the logged in message ****
-2025-01-01 13:38:01 INFO  BaseClass:19 - **** Starting Login Steps ****
-2025-01-01 13:38:02 INFO  BaseClass:46 - **** Entering invalid login details ****
-2025-01-01 13:38:03 INFO  BaseClass:33 - **** Clicking on login button ****
-2025-01-01 13:38:04 INFO  BaseClass:54 - **** Checking the login error message ****
-2025-01-01 13:38:31 INFO  BaseClass:19 - **** Starting Login Steps ****
-2025-01-01 13:38:33 INFO  BaseClass:26 - **** Entering valid login details ****
-2025-01-01 13:38:34 INFO  BaseClass:33 - **** Clicking on login button ****
-2025-01-01 13:38:36 INFO  BaseClass:40 - **** Checking the logged in message ****
-2025-01-01 13:38:36 INFO  BaseClass:63 - **** Clicking the logout button ****
-2025-01-01 13:39:03 INFO  BaseClass:25 - **** Starting RegisterUser Steps ****
-2025-01-01 13:39:03 INFO  BaseClass:27 - **** Clicking in Sign Up / Login  ****
-2025-01-01 13:39:04 INFO  BaseClass:111 - **** Entering existing email address ****
-2025-01-01 13:39:05 INFO  BaseClass:115 - **** Clicking on sign up button ****
-2025-01-01 13:39:05 INFO  BaseClass:121 - **** Checking existing email error msg ****
-2025-01-01 13:40:06 INFO  BaseClass:15 - **** Started TestCaseSteps ****
-2025-01-01 13:40:08 INFO  BaseClass:26 - **** Navigated to Test Class Page****
-2025-01-01 13:40:08 INFO  BaseClass:27 - **** Finished TestCaseSteps ****
-2025-01-01 13:40:34 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 13:41:06 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 17:15:59 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 17:16:03 INFO  BaseClass:19 - **** Started add products in cart steps ****
-2025-01-01 17:25:58 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 17:25:59 INFO  BaseClass:19 - **** Started add products in cart steps ****
-2025-01-01 17:28:03 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 17:29:51 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 17:29:51 INFO  BaseClass:19 - **** Started add products in cart steps ****
-2025-01-01 17:34:18 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 17:34:18 INFO  BaseClass:19 - **** Started add products in cart steps ****
-2025-01-01 17:38:16 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 17:38:18 INFO  BaseClass:19 - **** Started add products in cart steps ****
-2025-01-01 17:39:09 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 17:39:12 INFO  BaseClass:19 - **** Started add products in cart steps ****
-2025-01-01 17:44:07 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 17:44:07 INFO  BaseClass:19 - **** Started add products in cart steps ****
-2025-01-01 17:46:03 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 17:46:06 INFO  BaseClass:19 - **** Started add products in cart steps ****
-2025-01-01 17:47:04 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 17:47:07 INFO  BaseClass:19 - **** Started add products in cart steps ****
-2025-01-01 17:48:46 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 17:48:49 INFO  BaseClass:19 - **** Started add products in cart steps ****
-2025-01-01 17:53:30 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 17:53:32 INFO  BaseClass:19 - **** Started add products in cart steps ****
-2025-01-01 17:56:56 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 17:56:58 INFO  BaseClass:19 - **** Started add products in cart steps ****
-2025-01-01 18:02:34 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 18:02:37 INFO  BaseClass:19 - **** Started add products in cart steps ****
-2025-01-01 18:05:53 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 18:05:55 INFO  BaseClass:19 - **** Started add products in cart steps ****
-2025-01-01 18:08:04 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 18:08:07 INFO  BaseClass:19 - **** Started add products in cart steps ****
-2025-01-01 18:09:09 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 18:09:11 INFO  BaseClass:19 - **** Started add products in cart steps ****
-2025-01-01 18:14:19 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 18:14:21 INFO  BaseClass:19 - **** Started add products in cart steps ****
-2025-01-01 18:18:40 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 18:18:42 INFO  BaseClass:19 - **** Started add products in cart steps ****
-2025-01-01 18:22:17 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 18:22:19 INFO  BaseClass:19 - **** Started add products in cart steps ****
-2025-01-01 18:24:38 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 18:24:41 INFO  BaseClass:19 - **** Started add products in cart steps ****
-2025-01-01 22:28:26 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 22:28:29 INFO  BaseClass:19 - **** Started add products in cart steps ****
-2025-01-01 22:36:51 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 22:43:07 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
-2025-01-01 22:44:23 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
+2025-01-02 21:06:19 INFO  BaseClass:25 - **** Starting RegisterUser Steps ****
+2025-01-02 21:06:19 INFO  BaseClass:27 - **** Clicking in Sign Up / Login  ****
+2025-01-02 21:06:20 INFO  BaseClass:37 - **** Entering Email and Name for signup ****
+2025-01-02 21:06:21 INFO  BaseClass:42 - **** Clicking on signup button ****
+2025-01-02 21:06:21 ERROR BaseClass:54 - **** Entering New User info ****
+2025-01-02 21:06:25 INFO  BaseClass:70 - **** Clicking on create account btn ****
+2025-01-02 21:06:26 INFO  BaseClass:85 - **** Clicking on continue button in register user page ****
+2025-01-02 21:06:29 INFO  BaseClass:99 - **** Clicking on delete account ****
+2025-01-02 21:06:58 INFO  BaseClass:19 - **** Starting Login Steps ****
+2025-01-02 21:06:59 INFO  BaseClass:26 - **** Entering valid login details ****
+2025-01-02 21:07:00 INFO  BaseClass:33 - **** Clicking on login button ****
+2025-01-02 21:07:02 INFO  BaseClass:40 - **** Checking the logged in message ****
+2025-01-02 21:07:30 INFO  BaseClass:19 - **** Starting Login Steps ****
+2025-01-02 21:07:32 INFO  BaseClass:46 - **** Entering invalid login details ****
+2025-01-02 21:07:33 INFO  BaseClass:33 - **** Clicking on login button ****
+2025-01-02 21:07:33 INFO  BaseClass:54 - **** Checking the login error message ****
+2025-01-02 21:07:59 INFO  BaseClass:19 - **** Starting Login Steps ****
+2025-01-02 21:08:01 INFO  BaseClass:26 - **** Entering valid login details ****
+2025-01-02 21:08:01 INFO  BaseClass:33 - **** Clicking on login button ****
+2025-01-02 21:08:04 INFO  BaseClass:40 - **** Checking the logged in message ****
+2025-01-02 21:08:04 INFO  BaseClass:63 - **** Clicking the logout button ****
+2025-01-02 21:08:32 INFO  BaseClass:25 - **** Starting RegisterUser Steps ****
+2025-01-02 21:08:32 INFO  BaseClass:27 - **** Clicking in Sign Up / Login  ****
+2025-01-02 21:08:34 INFO  BaseClass:112 - **** Entering existing email address ****
+2025-01-02 21:08:35 INFO  BaseClass:116 - **** Clicking on sign up button ****
+2025-01-02 21:08:35 INFO  BaseClass:122 - **** Checking existing email error msg ****
+2025-01-02 21:09:34 INFO  BaseClass:15 - **** Started TestCaseSteps ****
+2025-01-02 21:09:35 INFO  BaseClass:26 - **** Navigated to Test Class Page****
+2025-01-02 21:09:35 INFO  BaseClass:27 - **** Finished TestCaseSteps ****
+2025-01-02 21:10:01 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
+2025-01-02 21:10:07 INFO  BaseClass:50 - **** Checking if products details are displayed ****
+2025-01-02 21:10:07 INFO  BaseClass:72 - **** Finished VerifyProduct Steps ****
+2025-01-02 21:10:33 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
+2025-01-02 21:11:32 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
+2025-01-02 21:11:34 INFO  BaseClass:19 - **** Started add products in cart steps ****
+2025-01-02 21:12:07 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
+2025-01-02 21:12:39 INFO  BaseClass:19 - **** Started VerifyProduct Steps ****
+2025-01-02 21:12:46 INFO  BaseClass:25 - **** Starting RegisterUser Steps ****
+2025-01-02 21:12:46 INFO  BaseClass:27 - **** Clicking in Sign Up / Login  ****
+2025-01-02 21:12:47 INFO  BaseClass:37 - **** Entering Email and Name for signup ****
+2025-01-02 21:12:48 INFO  BaseClass:42 - **** Clicking on signup button ****
+2025-01-02 21:12:48 ERROR BaseClass:54 - **** Entering New User info ****
+2025-01-02 21:12:52 INFO  BaseClass:70 - **** Clicking on create account btn ****
+2025-01-02 21:12:53 INFO  BaseClass:85 - **** Clicking on continue button in register user page ****
+2025-01-02 21:13:05 INFO  BaseClass:99 - **** Clicking on delete account ****

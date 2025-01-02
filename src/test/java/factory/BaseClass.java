@@ -1,5 +1,6 @@
 package factory;
 
+import io.cucumber.java.it.Ma;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,6 +18,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
 public class BaseClass {
@@ -67,6 +70,11 @@ public class BaseClass {
             switch (browser.toLowerCase()) {
                 case "chrome":
                     ChromeOptions options = new ChromeOptions();
+                    //  Adding custom download folder
+                    Map<String, Object> prefs = new HashMap<String, Object>();
+                    prefs.put("download.default_directory", System.getProperty("user.dir") + "\\Downloads");
+                    options.setExperimentalOption("prefs", prefs);
+                    //  Adding chrome extensions
                     File file = new File(System.getProperty("user.dir") + "\\Extention\\uBlock.crx");
                     options.addExtensions(file);
                     driver = new ChromeDriver(options);

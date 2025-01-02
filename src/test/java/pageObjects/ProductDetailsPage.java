@@ -55,14 +55,16 @@ public class ProductDetailsPage extends BasePage {
         return txt_brand.isDisplayed();
     }
 
-    public void setQuantity(String val){
+    public void setQuantity(String val) {
         txt_quantity.clear();
         txt_quantity.sendKeys(val);
     }
-    public void clickAddToCart(){
+
+    public void clickAddToCart() {
         btn_AddtoCart.click();
     }
-    public void clickViewCart(){
+
+    public void clickViewCart() {
         btn_viewCart.click();
     }
 }

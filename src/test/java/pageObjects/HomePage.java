@@ -63,6 +63,9 @@ public class HomePage extends BasePage {
     public void clickSubscribe() {
         btn_subscribe.click();
     }
+    public void clickCart(){
+        btn_Cart.click();
+    }
 
     public String getSubscriptionSuccessMsg(){
         try {

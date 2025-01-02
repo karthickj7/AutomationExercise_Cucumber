@@ -26,7 +26,7 @@ public class RegisterUserSteps {
         login = new LoginPage(BaseClass.getDriver());
         BaseClass.getLogger().info("**** Clicking in Sign Up / Login  ****");
         login.clickMyAccount();
-        if (!"New User Signup!".equals(login.getNewUserMsg())){
+        if (!"New User Signup!".equals(login.getNewUserMsg())) {
             BaseClass.getLogger().error("**** New User Signup! failed ****");
             Assert.fail("**** New User Signup! failed ****");
         }
@@ -36,13 +36,14 @@ public class RegisterUserSteps {
     public void theUserEntersTheLoginDetailsAndAndClicksSignup(String name, String email) {
         BaseClass.getLogger().info("**** Entering Email and Name for signup ****");
         login.setSignUpName(name);
-        login.setSignUpEmail(email);
+        //  login.setSignUpEmail(email);
+        login.setSignUpEmail(BaseClass.getRandomAlphabetic() + "@" + BaseClass.getRandomAlphabetic() + ".com");
 
         BaseClass.getLogger().info("**** Clicking on signup button ****");
         login.clickSignUp();
 
         registerUser = new RegisterUserPage(BaseClass.getDriver());
-        if (!registerUser.getAccountCreationMsg().equals("ENTER ACCOUNT INFORMATION")){
+        if (!registerUser.getAccountCreationMsg().equals("ENTER ACCOUNT INFORMATION")) {
             BaseClass.getLogger().error("**** ENTER ACCOUNT INFORMATION msg failed ****");
             Assert.fail("**** ENTER ACCOUNT INFORMATION msg failed  ****");
         }
@@ -74,7 +75,7 @@ public class RegisterUserSteps {
 
     @Then("the account created message is displayed")
     public void theAccountCreatedMessageIsDisplayed() {
-        if (!"ACCOUNT CREATED!".equals(registerUser.getAccountCreatedMsg())){
+        if (!"ACCOUNT CREATED!".equals(registerUser.getAccountCreatedMsg())) {
             Assert.fail("ACCOUNT CREATED! msg failed");
         }
     }
@@ -120,7 +121,7 @@ public class RegisterUserSteps {
     public void theUserIsPresentedWithEmailAlreadyExistsMsg() {
         BaseClass.getLogger().info("**** Checking existing email error msg ****");
         login = new LoginPage(BaseClass.getDriver());
-        if (!"Email Address already exist!".equals(login.getEmailExistsMsg())){
+        if (!"Email Address already exist!".equals(login.getEmailExistsMsg())) {
             Assert.fail("**** Email Address already exist! msg error ****");
         }
 

@@ -15,6 +15,9 @@ public class CartPage extends BasePage {
     List<WebElement> list_products;
     @FindBy(xpath = "//table[@id=\"cart_info_table\"]/tbody/tr[1]/td")
     List<WebElement> list_products_column;
+    @FindBy(xpath = "//a[normalize-space()=\"Proceed To Checkout\"]")
+    WebElement btn_checkout;
+
 
     public CartPage(WebDriver driver) {
         super(driver);
@@ -22,12 +25,14 @@ public class CartPage extends BasePage {
 
     public int getProductCount() {
         return list_products.size();
-
     }
 
     public int getProductColumnCount() {
         return list_products_column.size();
+    }
 
+    public void clickCheckout() {
+        btn_checkout.click();
     }
 
     public String getProductRowValue(int rowNum, int colNum) {
